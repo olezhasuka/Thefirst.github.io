@@ -221,6 +221,11 @@ hr {
 	vertical-align: top;
 	overflow: hidden;
 	margin-bottom: 20px;
+	margin: 0 2%;
+}
+
+.slick-slide:first-child img {
+	margin-right: 0px;
 }
 
 .slick-prev {
