@@ -215,16 +215,20 @@ hr {
 }
 
 .slick-slide img {
-	width: 100%;
+	width: 92%;
 	height: 250px;
 	display: inline-block;
 	vertical-align: top;
 	overflow: hidden;
 	margin-bottom: 20px;
-	margin: 0 2%;
+	margin: 0 3%;
 }
 
 .slick-slide:first-child img {
+	margin-left: 0px;
+}
+
+.slick-slide:last-child img {
 	margin-right: 0px;
 }
 
