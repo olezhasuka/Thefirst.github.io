@@ -189,9 +189,8 @@ hr {
 
 .section_about {
 	background-color: #f8f8f8;
-	width: 78%;
+	width: 70%;
 	margin: auto;
-	height: 100%;
 }
 
 .about_text {
@@ -201,11 +200,19 @@ hr {
 
 .text_block {
 	display: inline-block;
-	width: 43%;
-    margin: 0 3%;
+	width: 48%;
+    margin: 0 2%;
 	color: #555555;
 	font-size: 14px;
 	margin-bottom: 70px;
+}
+
+.text_block:first-child {
+	margin-left: 0;
+}
+
+.text_block:last-child {
+	margin-right: 0;
 }
 
 .item p {
@@ -221,18 +228,18 @@ hr {
 	vertical-align: top;
 	overflow: hidden;
 	margin-bottom: 20px;
-	margin: 0 10%;
+	margin: 0 3%;
 }
 
 .slick-prev {
-	left: 1.9%;
+	left: 1%;
 	background-image: url(images/button_left.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .slick-next {
-	right: 1.5%;
+	right: 1%;
 	background-image: url(images/button_right.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -283,6 +290,7 @@ hr {
 .work_img {
 	display: inline-block;
 	margin: 1% 1%;
+	width: 31%;
 
 }
 
