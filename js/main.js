@@ -13,4 +13,9 @@ $(document).ready(function () {
       		.closest('div.tabs').find('div.works').removeClass('active').eq($(this).index()).addClass('active');
     });
 
+    $('.read_more').on('click', function(){
+        $(this).siblings('.post_more_text').slideToggle(500);
+        $('.kek').rotate(180)
+      });
+    $()
 });
