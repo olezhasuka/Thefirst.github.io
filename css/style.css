@@ -440,7 +440,7 @@ hr {
 }
 
 .post2 {
-	margin-bottom: 160px;
+	margin-bottom: 60px;
 }
 
 .contact {
@@ -450,4 +450,54 @@ hr {
 
 .firm {
 	margin: auto;
+	text-align: center;
+}
+
+.section_post {
+	padding: 100px 0;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.firm a {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 2.5% 80px 2.5%;
+}
+
+.saying {
+	padding: 0 18%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.saying p {
+	font-size: 18px;
+	color: #555555;
+	margin-bottom: 40px;
+}
+
+.saying .writer {
+	font-size: 20px;
+}
+
+.slick-dots {
+	display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    list-style: none;
+    width: 100%;
+}
+
+.slick-dots li {
+	display: inline-block;
+	font-size: 0px;
+	border: none;
+	background-image: url(images/tab.png);
+	background-size: cover;
+	width: 2%;
+    height: 13px;
+    margin: 0 1%;
 }
