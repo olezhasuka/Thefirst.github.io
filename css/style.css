@@ -423,4 +423,21 @@ hr {
 .read_more img {
 	float: left;
     padding: 5px 0;
+    transition: 0.2s ease-in-out;
+}
+
+.read_more.active img {
+	transform: rotate(180deg);
+}
+
+.post1 {
+	margin-bottom: 70px;
+}
+
+.post1, .post2 {
+	float: left;
+}
+
+.post2 {
+	margin-bottom: 160px;
 }
