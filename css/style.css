@@ -436,8 +436,18 @@ hr {
 
 .post1, .post2 {
 	float: left;
+	overflow: hidden;
 }
 
 .post2 {
 	margin-bottom: 160px;
+}
+
+.contact {
+	width: 70%;
+	margin: auto;
+}
+
+.firm {
+	margin: auto;
 }
