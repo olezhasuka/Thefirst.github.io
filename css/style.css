@@ -93,20 +93,10 @@ h1 {
 	cursor: pointer;
 }
 
-.button_start:before {
-content:'';
-position: absolute;
-top: 0px;
-left: 0px;
-width: 180px;
-height: 0px;
-background: rgba(255,255,255,0.3);
-border-radius: 0px;
-transition: all 0.3s ease;
-}
-
-.button_start:hover:before {
-	height: 100%;
+.button_start:hover, .button_text:hover, .button_get:hover {
+	color: #3e3f40;
+	background-color: white;
+	transition: 0.5s ease;
 }
 
 .button_text {

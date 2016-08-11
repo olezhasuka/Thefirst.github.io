@@ -10,7 +10,8 @@ $(document).ready(function () {
 	$('ul.section_text').on('click', 'li:not(.active)', function() {
     	$(this)
       		.addClass('active').siblings().removeClass('active')
-      		.closest('div.tabs').find('div.works').removeClass('active').eq($(this).index()).addClass('active');
+      		.closest('div.tabs').find('div.works').fadeTo([100], 0).css("display", "none")
+            .removeClass('active').eq($(this).index()).addClass('active').fadeTo([200], 1);
     });
 
     $('.read_more').on('click', function(){
@@ -31,5 +32,11 @@ $(document).ready(function () {
         autoplaySpeed: 5000,
         fade: true,
         adaptiveHeight: true
+    });
+    $("a#button").click(function () { 
+      var elementClick = $(this).attr("href");
+      var destination = $(elementClick).offset().top;
+      $('html,body').animate( { scrollTop: destination }, 700 );
+      return false;
     });
 });
