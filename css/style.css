@@ -29,7 +29,7 @@ body {
 
 .wrapper {
 	background-image: url(images/background1.png);
-	width: 1600px;
+	width: 100%;
 	height: 770px;
 	background-size: cover;
 	position: relative;
@@ -120,6 +120,7 @@ transition: all 0.3s ease;
 	text-align: center;
 	width: 70%;
 	margin: auto;
+	overflow: auto;
 }
 
 .section_text {
@@ -145,7 +146,6 @@ transition: all 0.3s ease;
 hr {
 	border: 0;
 	height: 2px;
-	color: #555555;
 	background-color: #555555;
 	width: 50px;
 	margin: auto;
@@ -443,12 +443,14 @@ hr {
 	margin-bottom: 60px;
 }
 
-.contact {
+.firms {
 	width: 70%;
 	margin: auto;
+	padding: 100px 0;
+	background-color: #f8f8f8;
 }
 
-.firm {
+.icon_firms {
 	margin: auto;
 	text-align: center;
 }
@@ -461,7 +463,7 @@ hr {
     overflow: hidden;
 }
 
-.firm a {
+.icon_firms a {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 2.5% 80px 2.5%;
@@ -470,7 +472,6 @@ hr {
 .saying {
 	padding: 0 18%;
     text-align: center;
-    margin-bottom: 100px;
 }
 
 .saying p {
@@ -481,6 +482,10 @@ hr {
 
 .saying .writer {
 	font-size: 20px;
+}
+
+.saying_text {
+	cursor: pointer;
 }
 
 .slick-dots {
@@ -495,9 +500,123 @@ hr {
 	display: inline-block;
 	font-size: 0px;
 	border: none;
-	background-image: url(images/tab.png);
-	background-size: cover;
 	width: 2%;
     height: 13px;
     margin: 0 1%;
+}
+
+.slick-dots li button {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+}
+
+.slick-dots .slick-active button {
+	background-color: #c0301c;
+}
+
+.left_icon {
+	float: left;
+	box-sizing: border-box;
+	width: 24%;
+	margin-right: 9%;
+}
+
+.contact_icon {
+	margin-bottom: 30px ;
+	height: 65px;
+	width: 90%;
+}
+
+.contact_icon p {
+	float: left;
+	color: #555555;
+	font-size: 12px;
+	clear: both;
+	text-align: left;
+}
+
+h3 {
+	font-size: 14px;
+	color: #555555;
+	float: left;
+}
+
+.contact_icon img {
+	float: left;
+	margin: 0 5% 15px 0;
+}
+
+form {
+	float: left;
+	width: 67%;
+	font-size: 0;
+}
+
+input {
+	height: 40px;
+	width: 45%;
+    margin: 0 3.6% 20px 0;
+	outline-color: #c0301c;
+	font-size: 12px;
+	padding-left: 20px;
+}
+
+input:nth-child(2n) {
+	margin-right: 0;
+}
+
+#your_message {
+	height: 80px;
+	width: 96.8%;
+    margin-right: 0;
+    font-size: 12px;
+    padding: 2% 0 0 3%;
+    outline-color: #c0301c;
+    resize: none;
+}
+
+.button_form {
+	float: left;
+    margin: 20px 4% 0 0;
+    width: 22.6%;
+    height: 40px;
+    font-size: 12px;
+    color: #555555;
+}
+
+form p {
+	font-size: 12px;
+	margin-top: 32px;
+	float: left;
+	color: #555555;
+}
+
+form p span {
+	color: #c0301c;
+}
+
+.footer {
+	width: 100%;
+	background-color: #c0301c;
+	height: 300px;
+	text-align: center;
+}
+
+.footer_img {
+	display: inline-block;
+	margin: 100px 0.5% 25px 0.5%;
+}
+
+.hr_footer {
+	background-color: white;
+}
+
+.text_footer {
+	color: white;
+	font-size: 12px;
 }

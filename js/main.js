@@ -26,9 +26,10 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        touchMove: true,
         dots: true,
-        autoplay: true,
-        autoplaySpeed: 5000
+        autoplay: false,
+        autoplaySpeed: 5000,
+        fade: true,
+        adaptiveHeight: true
     });
 });
