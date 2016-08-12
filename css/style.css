@@ -36,16 +36,23 @@ body {
 }
 
 .header {
-	padding: 40px 230px 0 230px;
+	padding: 40px 14% 0 14%;
 	overflow: hidden;
 	height: 770px;
 }
 
-.startup {
+#startup {
 	color: white;
 	font-size: 24px;
 	font-weight: bold;
 	float: left;
+}
+
+#startup.fixed {
+	position: fixed;
+	top: 0;
+	z-index: 11;
+	padding-top: 10px;
 }
 
 #menu {
@@ -71,9 +78,19 @@ body {
 	position: fixed;
 	top: 0;
 	right: 0;
-	background-color: #555555;
+	background-color: #c0301c;
 	z-index: 10;
 	width: 100%;
+	text-align: right;
+	padding: 15px 14% 15px 0;
+
+}
+
+#menu.fixed.menu_link {
+	color: white;
+	font-size: 14px;
+	margin-right: 20px;
+	float: right;
 }
 
 .main_text {

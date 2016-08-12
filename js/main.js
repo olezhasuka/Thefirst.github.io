@@ -22,7 +22,7 @@ $(document).ready(function () {
         	$(this).addClass('active')
         }
     });
-    
+
     $('.saying').slick({
         infinite: false,
         slidesToShow: 1,
@@ -45,10 +45,20 @@ $(document).ready(function () {
     var $menu = $("#menu");
  
         $(window).scroll(function(){
-            if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
+            if ( $(this).scrollTop() > 720 && $menu.hasClass("default") ){
                 $menu.removeClass("default").addClass("fixed");
-            } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+            } else if($(this).scrollTop() <= 720 && $menu.hasClass("fixed")) {
                 $menu.removeClass("fixed").addClass("default");
+            }
+        });
+
+    var $startup = $("#startup");
+ 
+        $(window).scroll(function(){
+            if ( $(this).scrollTop() > 720 && $startup.hasClass("default") ){
+                $startup.removeClass("default").addClass("fixed");
+            } else if($(this).scrollTop() <= 720 && $startup.hasClass("fixed")) {
+                $startup.removeClass("fixed").addClass("default");
             }
         });
 });
