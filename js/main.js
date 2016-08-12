@@ -22,6 +22,7 @@ $(document).ready(function () {
         	$(this).addClass('active')
         }
     });
+    
     $('.saying').slick({
         infinite: false,
         slidesToShow: 1,
@@ -33,10 +34,21 @@ $(document).ready(function () {
         fade: true,
         adaptiveHeight: true
     });
+
     $("a#button").click(function () { 
       var elementClick = $(this).attr("href");
       var destination = $(elementClick).offset().top;
       $('html,body').animate( { scrollTop: destination }, 700 );
       return false;
     });
+
+    var $menu = $("#menu");
+ 
+        $(window).scroll(function(){
+            if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
+                $menu.removeClass("default").addClass("fixed");
+            } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+                $menu.removeClass("fixed").addClass("default");
+            }
+        });
 });
