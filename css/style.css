@@ -90,19 +90,14 @@ h1 {
 	border-radius: 3px;
 	margin: 50px auto 0;
 	position: relative;
-	cursor: pointer;
+	color: white;
+	background-color: rgba( 255, 0, 0, 0);
 }
 
 .button_start:hover, .button_text:hover, .button_get:hover {
 	color: #3e3f40;
 	background-color: white;
 	transition: 0.5s ease;
-}
-
-.button_text {
-	color: white;
-	font-size: 16px;
-	line-height: 50px;
 }
 
 .section {
