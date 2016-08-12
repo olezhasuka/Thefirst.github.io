@@ -258,13 +258,14 @@ hr {
 
 .social_logo {
 	position: absolute;
-	top: 190px;
-	left: 75px;
+	top: 59%;
+    left: 26%;
 	display: none;
+	width: 50%;
 }
 
 .bg_logo {
-	width: 30px;
+	width: 22%;
 	height: 30px;
 	text-align: center;
 	position: relative;
@@ -373,6 +374,7 @@ hr {
 
 .works.active {
 	display: block;
+	font-size: 0;
 }
 
 .section_link {
@@ -413,6 +415,10 @@ hr {
 	width: 41%;
 	height: 320px;
 	margin-right: 3%;
+}
+
+.post_img img {
+	width: 100%;
 }
 
 .post_content {
@@ -480,7 +486,7 @@ hr {
 	float: left;
 	color: #c0301c;
 	cursor: pointer;
-	width: 17%;
+	width: 22%;
 }
 
 .read_more p {
